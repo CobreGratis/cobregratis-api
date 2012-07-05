@@ -5,6 +5,11 @@ O [Cobre Grátis](http://cobregratis.com.br) é um aplicativo na web para emiss�
 
 Com a API é possível integrar qualquer sistema, seja ele uma loja virtual de e-commerce ou um sistema de ERP como Oracle, SAP, Microsiga para que ele emita boleto bancário automaticamente. É uma ferramenta realmente poderosa.
 
+Bibliotecas
+----------------
+* Ruby: [https://github.com/rafaelp/cobregratis](https://github.com/rafaelp/cobregratis)
+* PHP: [https://github.com/BielSystems/cobregratis-php](https://github.com/BielSystems/cobregratis-php)
+
 Benefícios da API
 ----------------
 * Programadores conseguem incluir o Cobre Grátis como meio de pagamento em um e-commerce.
