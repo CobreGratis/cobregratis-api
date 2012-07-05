@@ -8,6 +8,7 @@ Com a API é possível integrar qualquer sistema, seja ele uma loja virtual de e
 Bibliotecas
 ----------------
 * Ruby: [https://github.com/rafaelp/cobregratis](https://github.com/rafaelp/cobregratis)
+* Python: [https://github.com/BielSystems/cobregratis-python](https://github.com/BielSystems/cobregratis-python)
 * PHP: [https://github.com/BielSystems/cobregratis-php](https://github.com/BielSystems/cobregratis-php)
 
 Benefícios da API
