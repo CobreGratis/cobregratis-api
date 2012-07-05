@@ -10,6 +10,7 @@ Bibliotecas
 * Ruby: [https://github.com/rafaelp/cobregratis](https://github.com/rafaelp/cobregratis)
 * Python: [https://github.com/BielSystems/cobregratis-python](https://github.com/BielSystems/cobregratis-python)
 * PHP: [https://github.com/BielSystems/cobregratis-php](https://github.com/BielSystems/cobregratis-php)
+* Perl: [https://github.com/BielSystems/cobregratis-perl](https://github.com/BielSystems/cobregratis-perl)
 
 Benefícios da API
 ----------------
