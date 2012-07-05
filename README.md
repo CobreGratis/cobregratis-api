@@ -19,7 +19,6 @@ A API é para nerds. Se você não é um programador, e não tem nenhum na sua e
 
 Introdução
 ----------------
-
 A API do Cobre Grátis é baseada nos princípios [RESTful](http://en.wikipedia.org/wiki/Representational_state_transfer#RESTful_web_services) e usa conexão HTTP com todos os seus verbos (GET/POST/PUT/DELETE). Com a nossa API o seu desenvolvedor poderá integrar facilmente um programa existente à plataforma de emissão de boleto bancário.
 
 A URL Base da API é **https://app.cobregratis.com.br/**
@@ -133,7 +132,7 @@ Se você não informar este cabeçalho, você receberá um erro `400 Bad Request
 
 **Atenção:** Por uma questão de compatibilidade, este bloqueio será realizado somente a partir de 01/01/2013.
 
-Use Cache HTTP
+Cache HTTP
 ----------------
 
 Você deve fazer uso dos cabeçalhos HTTP de cache para diminuir a carga em nossos servidores (e aumentar a velocidade do seu aplicativo!).
