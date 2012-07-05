@@ -100,8 +100,9 @@ Criar um boleto bancário
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <bank-billet>
-  <amount type="float">500.0</amount>
-  <expire-at type="date">2012-07-26</expire-at>
+  <bank-billet-account-id>1212</bank-billet-account-id>
+  <amount>500.0</amount>
+  <expire-at>2012-07-26</expire-at>
   <name>Rafael Lima</name>  
 </bank-billet>
 ```
