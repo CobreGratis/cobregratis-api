@@ -29,6 +29,12 @@ As requisições só podem ser feitas com SSL (https:// na frente da URL Base)
 
 Por padrão, a API deve ser acessada através das mesmas URLs e verbos HTTP da interface HTML normal, adicionando-se o formato desejado (.xml ou .json) ao final da URL, ou então passando os headers Content-type e Accept na requisição HTTP com os valores de acordo com o formato desejado (application/xml ou application/json, respectivamente).
 
+Plano Contratado
+----------------
+Para utilizar a API é necessário ter contratado o Plano Premium do Cobre Grátis.
+
+Para conhecer os planos e preços, acesse http://cobregratis.com.br/planos
+
 Convenções da API
 ----------------
 Na documentação da API, utilizamos as seguintes convenções:
