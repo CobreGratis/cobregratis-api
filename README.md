@@ -120,7 +120,7 @@ Fazendo uma Requisição
 ----------------
 
 Para realizar uma requisição, é necessário concatenar a URL Base ao path da ação de um determinado recurso.
-Cada ação disponível de cada recurso, terá uma URL específica, documentada nas APIs Disponíveis.
+Cada ação disponível de cada recurso, terá uma URL específica, documentada nas [APIs Disponíveis](#apis-dispon%C3%ADveis).
 
 Por exemplo, para fazer uma requisição para a ação 'listar' do recurso 'boletos bancários' (GET /bank\_billets.[format]), você deve usar a URL: **https://app.cobregratis.com.br/bank_billets.json**
 
