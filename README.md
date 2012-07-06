@@ -11,6 +11,7 @@ Bibliotecas
 * Python: [https://github.com/BielSystems/cobregratis-python](https://github.com/BielSystems/cobregratis-python)
 * PHP: [https://github.com/BielSystems/cobregratis-php](https://github.com/BielSystems/cobregratis-php)
 * Perl: [https://github.com/BielSystems/cobregratis-perl](https://github.com/BielSystems/cobregratis-perl)
+* Java (só leitura): [https://github.com/gustavohenrique/cobregratis-java](https://github.com/gustavohenrique/cobregratis-java)
 
 Benefícios da API
 ----------------
