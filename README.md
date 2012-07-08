@@ -177,6 +177,28 @@ APIs Disponíveis
 
 * [Boletos Bancários](https://github.com/BielSystems/cobregratis-api/blob/master/resources/bank_billets.md)
 
+Notificações Webhook
+-----------------
+Webhooks são notificações que o Cobre Grátis envia para um sistema externo após algum evento ocorrer no sistema.
+Essas notificações são realizadas através de uma requisição HTTP POST no endereço configurado para Webhook no cadastro de serviço.
+
+Atualmente o Cobre Grátis só realiza tal notificação quando um boleto é marcado como pago.
+
+Parâmetros passados na requisição:
+
+* `id` => ID no Cobre Grátis
+* `parcel` => Número da Parcela (1 para boletos não parcelados)
+* `service_code` => Código de Segurança (configurado no cadastro do serviço)
+* `meta` => Valor do campo meta (passado na criação do boleto)
+* `our_number` => Nosso Número
+* `expire_at` => Data de Vencimento
+* `document_number` => Número do Documento
+* `document_date` => Data do Documento
+* `document_amount` => Valor do Documento
+* `name` => Nome do Sacado
+* `paid_amount` => Valor Pago
+* `paid_at` => Data do Pagamento
+
 Ajude-nos a melhorar
 ----------------------
 
