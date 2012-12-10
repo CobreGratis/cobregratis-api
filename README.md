@@ -22,6 +22,10 @@ Benefícios da API
 * Desenvolver aplicativos móveis para emissão e gerenciamento de boleto bancário
 * Liberdade para fazer o que quiser, todo programador clama por isso!
 
+Programa de Parceiros
+----------------
+[Ganhe dinheiro integrando o Cobre Grátis!](http://bielsystems.wufoo.eu/forms/ganhe-dinheiro-integrando-o-cobre-gratis/)
+
 Não é um programador?
 ----------------
 A API é para nerds. Se você não é um programador, e não tem nenhum na sua empresa, entre em contato com [HE:labs](http://helabs.com.br).
