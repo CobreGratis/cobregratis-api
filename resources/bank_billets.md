@@ -89,6 +89,7 @@ Dados de um boleto bancário
   <thousand-character>.</thousand-character>
   <external-link>http://bole.to/86i613v3</external-link>
   <hashcode>86i613v3</hashcode>
+  <carnet-external-link nil="true"></carnet-external-link>
 </bank-billet>
 ```
 
