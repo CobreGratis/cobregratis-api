@@ -40,7 +40,7 @@ As requisições só podem ser feitas com SSL (https:// na frente da URL Base)
 
 É possível requisitar os dados no formato [JSON](http://www.json.org/json-pt.html) ou [XML](http://en.wikipedia.org/wiki/XML).
 
-Por padrão, a API deve ser acessada através das mesmas URLs e verbos HTTP da interface HTML normal, adicionando-se o formato desejado (.xml ou .json) ao final da URL, ou então passando os headers Content-type e Accept na requisição HTTP com os valores de acordo com o formato desejado (application/xml ou application/json, respectivamente).
+Por padrão, a API deve ser acessada através das mesmas URLs e verbos HTTP da interface HTML normal, adicionando-se o formato desejado (.xml ou .json) ao final da URL, ou então passando os headers `Content-type` e `Accept` na requisição HTTP com os valores de acordo com o formato desejado (application/xml ou application/json, respectivamente).
 
 Plano Contratado
 ----------------
@@ -66,6 +66,7 @@ A API retorna os códigos de resposta HTTP. Estas são as informações mais rel
 * **401 Unauthorized** - O Token de Autenticação é inválido.
 * **403 Forbidden** - O plano contratado não permite acesso à API.
 * **404 Not Found** - O endereço acessado não existe.
+* **429 Too Many Requests** - O usuário atingiu o [limite de requisições](#limite-de-requisições).
 * **503 Service Unavailable** - A conta atingiu algum dos limites de uso.
 * **500 Internal Server Error** - Houve um erro interno do servidor ao processar a requisição.
 
@@ -169,13 +170,13 @@ Erro 500 significa que a aplicação está completamente indisponível, mas voc�
 
 Nós temos uma página que informa o status dos servidores do Cobre Grátis em http://status.cobregratis.com.br/
 
-Limitações
+Limite de Requisições
 ----------------
-O servidor retorna o status HTTP [429 Too Many Requests](http://tools.ietf.org/html/draft-nottingham-http-new-status-02#section-4) nas seguintes situações:
+Cada usuário pode realizar uma requisição a cada 4 segundos e um máximo de 500 requisições por hora.
+A contagem é feita para cada Token de Autenticação utilizado e o número de requisições feitas é zerada no primeiro minuto de cada hora.
 
-* O cliente envia mais de 15 requisições por minuto.
-* O cliente envia mais de 500 requisições por hora.
-* O cliente enviar mais de uma requisição de uma só vez.
+Caso uma requisição seja realizada fora dos limites do usuário, o servidor retorna o status HTTP [429 Too Many Requests](http://tools.ietf.org/html/draft-nottingham-http-new-status-02#section-4).
+Neste caso, verifique o header `Retry-After` para ver quantos segundos você deve esperar até realizar a próxima requisição.
 
 APIs Disponíveis
 -----------------
