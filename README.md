@@ -168,7 +168,7 @@ Nós temos uma página que informa o status dos servidores do Cobre Grátis em h
 Existem dois tipos de limite de requisições. Em ambos os casos a contagem é feita para cada Token de Autenticação utilizado.
 
 ### Intervalo
-Cada usuário pode realizar uma requisição a cada 4 segundos.
+Cada usuário pode realizar uma requisição a cada 1 segundo.
 Caso o usuário realize duas requisições simultâneas, o servidor retorna o status HTTP [429 Too Many Requests](http://tools.ietf.org/html/draft-nottingham-http-new-status-02#section-4).
 Neste caso, o servidor envia o header `Retry-After` com o número de segundos que você deve esperar até realizar a próxima requisição.
 
