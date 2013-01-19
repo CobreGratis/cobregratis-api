@@ -1,12 +1,11 @@
-API do Cobre Grátis
-====================
+# API do Cobre Grátis
 
 O [Cobre Grátis](http://cobregratis.com.br) é um aplicativo na web para emissão e gerenciamento de boletos bancários.
 
 Com a API é possível integrar qualquer sistema, seja ele uma loja virtual de e-commerce ou um sistema de ERP como Oracle, SAP, Microsiga para que ele emita boleto bancário automaticamente. É uma ferramenta realmente poderosa.
 
-Bibliotecas
-----------------
+## Bibliotecas
+
 * Ruby: [https://github.com/rafaelp/cobregratis](https://github.com/rafaelp/cobregratis)
 * Python: [https://github.com/BielSystems/cobregratis-python](https://github.com/BielSystems/cobregratis-python)
 * PHP: [https://github.com/BielSystems/cobregratis-php](https://github.com/BielSystems/cobregratis-php)
@@ -14,24 +13,24 @@ Bibliotecas
 * .NET: [https://github.com/FredZvt/cobregratis-dotnet](https://github.com/FredZvt/cobregratis-dotnet)
 * Java (só leitura): [https://github.com/gustavohenrique/cobregratis-java](https://github.com/gustavohenrique/cobregratis-java)
 
-Benefícios da API
-----------------
+## Benefícios da API
+
 * Programadores conseguem incluir o Cobre Grátis como meio de pagamento em um e-commerce.
 * Criar boletos bancários a partir de um sistema de ERP.
 * Integração com o sistema de Contas a Receber
 * Desenvolver aplicativos móveis para emissão e gerenciamento de boleto bancário
 * Liberdade para fazer o que quiser, todo programador clama por isso!
 
-Programa de Parceiros
-----------------
+## Programa de Parceiros
+
 [Ganhe dinheiro integrando o Cobre Grátis!](http://bielsystems.wufoo.eu/forms/ganhe-dinheiro-integrando-o-cobre-gratis/)
 
-Não é um programador?
-----------------
+## Não é um programador?
+
 A API é para nerds. Se você não é um programador, e não tem nenhum na sua empresa, entre em contato com [HE:labs](http://helabs.com.br).
 
-Introdução
-----------------
+## Introdução
+
 A API do Cobre Grátis é baseada nos princípios [RESTful](http://en.wikipedia.org/wiki/Representational_state_transfer#RESTful_web_services) e usa conexão HTTP com todos os seus verbos (GET/POST/PUT/DELETE). Com a nossa API o seu desenvolvedor poderá integrar facilmente um programa existente à plataforma de emissão de boleto bancário.
 
 A URL Base da API é **https://app.cobregratis.com.br/**
@@ -42,14 +41,14 @@ As requisições só podem ser feitas com SSL (https:// na frente da URL Base)
 
 Por padrão, a API deve ser acessada através das mesmas URLs e verbos HTTP da interface HTML normal, adicionando-se o formato desejado (.xml ou .json) ao final da URL, ou então passando os headers `Content-type` e `Accept` na requisição HTTP com os valores de acordo com o formato desejado (application/xml ou application/json, respectivamente).
 
-Plano Contratado
-----------------
+## Plano Contratado
+
 Para utilizar a API é necessário ter contratado o Plano Premium do Cobre Grátis.
 
 Para conhecer os planos e preços, acesse http://cobregratis.com.br/planos
 
-Convenções da API
-----------------
+## Convenções da API
+
 Na documentação da API, utilizamos as seguintes convenções:
 
 * **#{variable}** - Indica o nome de uma variável que precisa ser substituída por valores da sua conta.
@@ -57,8 +56,8 @@ Na documentação da API, utilizamos as seguintes convenções:
 * **$TOKEN** - Indica o Token de Autenticação e está neste formato para facilitar os testes na linha de comando. Supondo que o seu token é "zjuio96wkixkzy6z98sy", você pode rodar o comando abaixo e posteriormente copiar e colar os comandos desta documentação no terminal.
 `export $TOKEN=zjuio96wkixkzy6z98sy`
 
-Códigos de Retorno
-----------------
+## Códigos de Retorno
+
 A API retorna os códigos de resposta HTTP. Estas são as informações mais relevantes:
 
 * **200 OK** - A chamada foi bem sucedida.
@@ -70,8 +69,7 @@ A API retorna os códigos de resposta HTTP. Estas são as informações mais rel
 * **503 Service Unavailable** - A conta atingiu algum dos limites de uso.
 * **500 Internal Server Error** - Houve um erro interno do servidor ao processar a requisição.
 
-Segurança
-----------------
+## Segurança
 
 O Cobre Grátis utiliza Certificados SSL 256 bits.
 
@@ -84,8 +82,7 @@ Todas as requisições realizadas nos servidore do Cobre Grátis serão criptogr
 <a target="_blank" href="http://siteforte.com.br/certificado/app.cobregratis.com.br?utm_source=app.cobregratis.com.br&amp;utm_medium=selo_premium&amp;utm_term=siteforte&amp;utm_campaign=permanente"><img style="border:none;" title="Auditoria de segurança para serviços online com transações financeiras e informações confidenciais :: SITEFORTE - Segurança Digital" src="http://siteforte.com.br/selos/6_appcobregratiscombr.png"></a>
 <script type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=EsVFjF1X7oM6H3W5JYic0wAmUVtfEaN5qV6XqBNWQa9BOCOV7DtucD"></script>
 
-Autentiçação
-----------------
+## Autentiçação
 
 Todo acesso à API do Cobre Grátis é feito do ponto de vista de um usuário. Assim sendo, toda requisição à API deverá ser autenticada. A autenticação é feita via HTTP Basic, porém ao invés de passar o login e senha do usuário, como é tradicional, deve-se fornecer o **Token de Autenticação** do usuário no campo ‘login’ e nada no campo ‘password’. Alguns clientes HTTP podem reclamar do fato do campo ‘password’ estar vazio, nesse caso pode-se informar ‘X’ como senha, que o sistema irá ignorar.
 
@@ -130,16 +127,14 @@ Content-Type: application/xml; charset=utf-8
 </hash>
 ```
 
-Fazendo uma Requisição
-----------------
+## Fazendo uma Requisição
 
 Para realizar uma requisição, é necessário concatenar a URL Base ao path da ação de um determinado recurso.
 Cada ação disponível de cada recurso, terá uma URL específica, documentada nas [APIs Disponíveis](#apis-dispon%C3%ADveis).
 
 Por exemplo, para fazer uma requisição para a ação 'listar' do recurso 'boletos bancários' (GET /bank\_billets.[format]), você deve usar a URL: **https://app.cobregratis.com.br/bank_billets.json**
 
-Identificando sua aplicação
------------------
+## Identificando sua aplicação
 
 Você deve incluir o header `User-Agent` com o nome da sua aplicação e um link ou endereço de e-mail dela, para que possamos entrar em contato caso 1) você esteja fazendo algo errado, e possamos avisá-lo antecipadamente antes de você ser bloqueado, ou 2) esteja fazendo algo muito legal, e possamos dar-lhe os parabéns :)
 Segue um Exemplo:
@@ -150,8 +145,7 @@ Se você não informar este cabeçalho, você receberá um erro `400 Bad Request
 
 **Atenção:** Por uma questão de compatibilidade, este bloqueio será realizado somente a partir de 01/01/2013.
 
-Cache HTTP
-----------------
+## Cache HTTP
 
 Você deve fazer uso dos cabeçalhos HTTP de cache para diminuir a carga em nossos servidores (e aumentar a velocidade do seu aplicativo!).
 
@@ -159,8 +153,7 @@ A maioria dos retornos das requisições irão incluir um header `ETag` ou `Last
 
 Mais informações sobre Cache HTTP (em inglês): http://www.mnot.net/cache_docs/
 
-Tratamento de erros
----------------
+## Tratamento de erros
 
 Se os nossos servidores estiverem com problema, sua requisição receberá um retorno de erro com status 5xx.
 
@@ -170,16 +163,16 @@ Erro 500 significa que a aplicação está completamente indisponível, mas voc�
 
 Nós temos uma página que informa o status dos servidores do Cobre Grátis em http://status.cobregratis.com.br/
 
-Limite de Requisições
-----------------
+## Limite de Requisições
+
 Existem dois tipos de limite de requisições. Em ambos os casos a contagem é feita para cada Token de Autenticação utilizado.
 
-*Intervalo*
+### Intervalo
 Cada usuário pode realizar uma requisição a cada 4 segundos.
 Caso o usuário realize duas requisições simultâneas, o servidor retorna o status HTTP [429 Too Many Requests](http://tools.ietf.org/html/draft-nottingham-http-new-status-02#section-4).
 Neste caso, o servidor envia o header `Retry-After` com o número de segundos que você deve esperar até realizar a próxima requisição.
 
-*Requisições por Hora*
+### Requisições por Hora
 Cada usuário pode realizar no máximo 500 requisições por hora.
 O número de requisições feitas pelo usuário é zerada no primeiro minuto de cada hora.
 
@@ -203,13 +196,12 @@ X-RateLimit-Remaining: 486
 Caso atinja o número máximo de requisições dentro de uma hora, o servidor retorna o status HTTP [429 Too Many Requests](http://tools.ietf.org/html/draft-nottingham-http-new-status-02#section-4).
 Neste caso, você deve esperar até o primeiro minuto da hora seguinte para realizar a próxima requisição.
 
-APIs Disponíveis
------------------
+## APIs Disponíveis
 
 * [Boletos Bancários](https://github.com/BielSystems/cobregratis-api/blob/master/resources/bank_billets.md)
 
-Notificações Webhook
------------------
+## Notificações Webhook
+
 Webhooks são notificações que o Cobre Grátis envia para um sistema externo após algum evento ocorrer no sistema.
 Essas notificações são realizadas através de uma requisição HTTP POST no endereço configurado para Webhook no cadastro de serviço.
 
@@ -230,8 +222,7 @@ Parâmetros passados na requisição:
 * `paid_amount` => Valor Pago
 * `paid_at` => Data do Pagamento
 
-Ajude-nos a melhorar
-----------------------
+## Ajude-nos a melhorar
 
 Por favor, nos diga como podemos melhorar a API.
 Se você tem alguma necessidade específica ou se encontrou um bug, use o [GitHub issues](https://github.com/BielSystems/cobregratis-api/issues).
