@@ -172,11 +172,36 @@ Nós temos uma página que informa o status dos servidores do Cobre Grátis em h
 
 Limite de Requisições
 ----------------
-Cada usuário pode realizar uma requisição a cada 4 segundos e um máximo de 500 requisições por hora.
-A contagem é feita para cada Token de Autenticação utilizado e o número de requisições feitas é zerada no primeiro minuto de cada hora.
+Existem dois tipos de limite de requisições. Em ambos os casos a contagem é feita para cada Token de Autenticação utilizado.
 
-Caso uma requisição seja realizada fora dos limites do usuário, o servidor retorna o status HTTP [429 Too Many Requests](http://tools.ietf.org/html/draft-nottingham-http-new-status-02#section-4).
-Neste caso, verifique o header `Retry-After` para ver quantos segundos você deve esperar até realizar a próxima requisição.
+*Intervalo*
+Cada usuário pode realizar uma requisição a cada 4 segundos.
+Caso o usuário realize duas requisições simultâneas, o servidor retorna o status HTTP [429 Too Many Requests](http://tools.ietf.org/html/draft-nottingham-http-new-status-02#section-4).
+Neste caso, o servidor envia o header `Retry-After` com o número de segundos que você deve esperar até realizar a próxima requisição.
+
+*Requisições por Hora*
+Cada usuário pode realizar no máximo 500 requisições por hora.
+O número de requisições feitas pelo usuário é zerada no primeiro minuto de cada hora.
+
+A cada requisição realizada, o servidor retorna os headers `X-RateLimit-Limit` e `X-RateLimit-Remaining` com o número de requisições permitidas e o número de requisições restantes para aquela hora.
+Exemplo:
+
+```shell
+curl -i -u zjuio96wkixkzy6z98sy:X -X GET \
+  -H 'Content-Type: application/xml' \
+  -H 'User-Agent: MyApp (yourname@example.com)' \
+  https://app.cobregratis.com.br/bank_billets/1.xml
+
+HTTP/1.1 200 OK
+Date: Fri, 05 Nov 2010 12:00:00 GMT
+Content-Type: application/xml; charset=utf-8
+X-RateLimit-Limit: 500
+X-RateLimit-Remaining: 486
+...
+```
+
+Caso atinja o número máximo de requisições dentro de uma hora, o servidor retorna o status HTTP [429 Too Many Requests](http://tools.ietf.org/html/draft-nottingham-http-new-status-02#section-4).
+Neste caso, você deve esperar até o primeiro minuto da hora seguinte para realizar a próxima requisição.
 
 APIs Disponíveis
 -----------------
