@@ -11,6 +11,7 @@ Com a API é possível integrar qualquer sistema, seja ele uma loja virtual de e
 * PHP: [https://github.com/BielSystems/cobregratis-php](https://github.com/BielSystems/cobregratis-php)
 * Perl: [https://github.com/BielSystems/cobregratis-perl](https://github.com/BielSystems/cobregratis-perl)
 * .NET: [https://github.com/FredZvt/cobregratis-dotnet](https://github.com/FredZvt/cobregratis-dotnet)
+* Java: [https://github.com/duduribeiro/cobregratis-java](https://github.com/duduribeiro/cobregratis-java)
 * Java (só leitura): [https://github.com/gustavohenrique/cobregratis-java](https://github.com/gustavohenrique/cobregratis-java)
 
 ## Benefícios da API
