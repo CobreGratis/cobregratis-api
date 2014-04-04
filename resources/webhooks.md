@@ -25,5 +25,8 @@ Parâmetros passados na requisição:
 * `name` => Nome do Sacado
 * `paid_amount` => Valor Pago
 * `paid_at` => Data do Pagamento
-* `status` => Status do Boleto (Rascunho, Aberto, Cancelado, Pago)
+* `status` => Status do Boleto (draft, opened, cancelled, paid)
 * `bank_rate` => Taxa cobrada pelo banco
+* `event` => Tipo de evento (draft, opened, cancelled, paid)
+* `service_id` => ID do serviço
+* `bank_billet_account_id` => ID da conta de cobrança
