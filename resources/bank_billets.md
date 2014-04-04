@@ -1,6 +1,11 @@
 Boletos Bancários
 ========
 
+Campos disponíveis e formatos utilizados
+------------
+
+* [Documentação](http://suporte.cobregratis.com.br/hc/pt-br/articles/201644783-Campos-que-podem-ser-usados-na-criação-de-boletos)
+
 Listar boletos bancários
 ------------
 
