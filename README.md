@@ -80,9 +80,6 @@ As requisições realizadas na porta 80, serão automaticamente redirecionadas p
 
 Todas as requisições realizadas nos servidore do Cobre Grátis serão criptografadas.
 
-<a target="_blank" href="http://siteforte.com.br/certificado/app.cobregratis.com.br?utm_source=app.cobregratis.com.br&amp;utm_medium=selo_premium&amp;utm_term=siteforte&amp;utm_campaign=permanente"><img style="border:none;" title="Auditoria de segurança para serviços online com transações financeiras e informações confidenciais :: SITEFORTE - Segurança Digital" src="http://siteforte.com.br/selos/6_appcobregratiscombr.png"></a>
-<script type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=EsVFjF1X7oM6H3W5JYic0wAmUVtfEaN5qV6XqBNWQa9BOCOV7DtucD"></script>
-
 ## Autentiçação
 
 Todo acesso à API do Cobre Grátis é feito do ponto de vista de um usuário. Assim sendo, toda requisição à API deverá ser autenticada. A autenticação é feita via HTTP Basic, porém ao invés de passar o login e senha do usuário, como é tradicional, deve-se fornecer o **Token de Autenticação** do usuário no campo ‘login’ e nada no campo ‘password’. Alguns clientes HTTP podem reclamar do fato do campo ‘password’ estar vazio, nesse caso pode-se informar ‘X’ como senha, que o sistema irá ignorar.
