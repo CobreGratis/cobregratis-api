@@ -6,10 +6,13 @@ Com a API é possível integrar qualquer sistema, seja ele uma loja virtual de e
 
 ## Bibliotecas
 
+### Oficiais
 * Ruby: [https://github.com/BielSystems/cobregratis-ruby](https://github.com/BielSystems/cobregratis-ruby)
 * Python: [https://github.com/BielSystems/cobregratis-python](https://github.com/BielSystems/cobregratis-python)
 * PHP: [https://github.com/BielSystems/cobregratis-php](https://github.com/BielSystems/cobregratis-php)
 * Perl: [https://github.com/BielSystems/cobregratis-perl](https://github.com/BielSystems/cobregratis-perl)
+
+### Não oficiais(para referência)
 * .NET: [https://github.com/FredZvt/cobregratis-dotnet](https://github.com/FredZvt/cobregratis-dotnet)
 * Java: [https://github.com/duduribeiro/cobregratis-java](https://github.com/duduribeiro/cobregratis-java)
 * Java (só leitura): [https://github.com/gustavohenrique/cobregratis-java](https://github.com/gustavohenrique/cobregratis-java)
