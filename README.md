@@ -7,11 +7,11 @@ Com a API é possível integrar qualquer sistema, seja ele uma loja virtual de e
 ## Bibliotecas
 
 ### Oficiais
-* Ruby: [https://github.com/BielSystems/cobregratis-ruby](https://github.com/BielSystems/cobregratis-ruby)
-* Python: [https://github.com/BielSystems/cobregratis-python](https://github.com/BielSystems/cobregratis-python)
-* PHP: [https://github.com/BielSystems/cobregratis-php](https://github.com/BielSystems/cobregratis-php)
-* Perl: [https://github.com/BielSystems/cobregratis-perl](https://github.com/BielSystems/cobregratis-perl)
-* Java: [https://github.com/BielSystems/cobregratis-java](https://github.com/BielSystems/cobregratis-java)
+* Ruby: [https://github.com/CobreGratis/cobregratis-ruby](https://github.com/CobreGratis/cobregratis-ruby)
+* Python: [https://github.com/CobreGratis/cobregratis-python](https://github.com/CobreGratis/cobregratis-python)
+* PHP: [https://github.com/CobreGratis/cobregratis-php](https://github.com/CobreGratis/cobregratis-php)
+* Perl: [https://github.com/CobreGratis/cobregratis-perl](https://github.com/CobreGratis/cobregratis-perl)
+* Java: [https://github.com/CobreGratis/cobregratis-java](https://github.com/CobreGratis/cobregratis-java)
 
 ### Não oficiais(para referência)
 * .NET: [https://github.com/FredZvt/cobregratis-dotnet](https://github.com/FredZvt/cobregratis-dotnet)
@@ -200,13 +200,13 @@ Neste caso, você deve esperar até o primeiro minuto da hora seguinte para real
 
 ## APIs Disponíveis
 
-* [Boletos Bancários](https://github.com/BielSystems/cobregratis-api/blob/master/resources/bank_billets.md)
+* [Boletos Bancários](https://github.com/CobreGratis/cobregratis-api/blob/master/resources/bank_billets.md)
 
 ## Webhook
-* [Documentação](https://github.com/BielSystems/cobregratis-api/blob/master/resources/webhooks.md)
+* [Documentação](https://github.com/CobreGratis/cobregratis-api/blob/master/resources/webhooks.md)
 
 ## Ajude-nos a melhorar
 
 Por favor, nos diga como podemos melhorar a API.
-Se você tem alguma necessidade específica ou se encontrou um bug, use o [GitHub issues](https://github.com/BielSystems/cobregratis-api/issues).
+Se você tem alguma necessidade específica ou se encontrou um bug, use o [GitHub issues](https://github.com/CobreGratis/cobregratis-api/issues).
 Fique a vontade para _forkar_ este projeto e enviar _pull requests_ com melhorias.
