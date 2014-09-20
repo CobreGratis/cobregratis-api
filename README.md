@@ -82,7 +82,7 @@ Toda requisição realizada através da API deve utilizar o protocolo HTTPS pois
 
 As requisições realizadas na porta 80, serão automaticamente redirecionadas para a porta 443. Esta medida garante que nenhuma requisição realizada na API estará fora do protocolo seguro.
 
-Todas as requisições realizadas nos servidore do Cobre Grátis serão criptografadas.
+Todas as requisições realizadas nos servidores do Cobre Grátis serão criptografadas.
 
 ## Autentiçação
 
@@ -202,7 +202,7 @@ Neste caso, você deve esperar até o primeiro minuto da hora seguinte para real
 
 * [Boletos Bancários](https://github.com/CobreGratis/cobregratis-api/blob/master/resources/bank_billets.md)
 
-## Webhook
+## Notificação
 * [Documentação](https://github.com/CobreGratis/cobregratis-api/blob/master/resources/webhooks.md)
 
 ## Ajude-nos a melhorar
