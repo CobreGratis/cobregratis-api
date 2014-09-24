@@ -29,3 +29,7 @@ Parâmetros passados na requisição:
 * `event` => Tipo de evento (draft, opened, cancelled, paid)
 * `service_id` => ID do modelo
 * `bank_billet_account_id` => ID da conta de cobrança
+* `bank_billet_subscription_id` => ID da Assinatura(Caso de boleto gerado por Assinatura)
+* `parcels_ids` => IDs de todas as parcelas(Caso de boleto parcelado)
+* `public_url` => URL pública do Boleto
+
