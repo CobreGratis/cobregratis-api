@@ -48,7 +48,7 @@ Por padrão, a API deve ser acessada através das mesmas URLs e verbos HTTP da i
 
 ## Plano Contratado
 
-Para utilizar a API é necessário ter contratado o Plano Premium do Cobre Grátis.
+Para utilizar a API é necessário ter contratado um plano com suporte a API.
 
 Para conhecer os planos e preços, acesse http://cobregratis.com.br/planos
 
